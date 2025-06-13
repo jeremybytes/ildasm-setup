@@ -15,7 +15,7 @@ static void Main(string[] args)
 }
 ```
 
-<img src="./Images/Hello-World-IL.png" width=500>
+<img src="./Images/Hello-World-IL.png">
 
 I'm not here to teach IL, but I'll point out a couple of things. The "ldstr" is "load string", and it loads the "Hello, World!" string literal so that it can be used as an argument. Then "call" will execute the "Console.WriteLine" method with the loaded string as the argument.    
 
@@ -41,11 +41,11 @@ Ex. ```D:\Apps\HelloWorld\bin\Debug\net9.0\```
 
 4. You should see the initial tree view.  
 
-<img src="./Images/ILDasm-Initial-Window.png" width=200>
+<img src="./Images/ILDasm-Initial-Window.png">
 
 5. Expand the "HelloWorld" node on the bottom, then the "HelloWorld.Program" node, then double-click on "Main". This will open a disassembly of the Main method.  
 
-<img src="./Images/ILDasm-default-fonts.png" width=500>
+<img src="./Images/ILDasm-default-fonts.png">
 
 As you'll notice, this is an old tool, but it still works on .NET 9 assemblies.  
 
@@ -66,7 +66,7 @@ You'll need to run ILDasm as an administrator. One way to do this is to open the
 
 3. Right-click "Developer PowerShell for VS 2022" and choose "Run as Administrator".  
 
-<img src="./Images/Run-As-Administrator.png" width=300>
+<img src="./Images/Run-As-Administrator.png">
 
 4. As above, navigate to a folder with a .NET .dll or .exe.  
 
@@ -82,11 +82,11 @@ The next time you open the application (whether or not you run as administrator)
 
 Something I find really handy is to set up ILDasm as an External Tool in Visual Studio. Instead of using the command line, I can open the current project in ILDasm with just a menu selection.  
 
-<img src="./Images/External-Tool-Menu.png" width=200>
+<img src="./Images/External-Tool-Menu.png">
 
 1. From the "Tools" menu, select "External Tools".  
 
-<img src="./Images/External-Tools.png" width=400>
+<img src="./Images/External-Tools.png">
 
 2. Click "Add".  
 
@@ -94,7 +94,7 @@ Something I find really handy is to set up ILDasm as an External Tool in Visual 
 
 4. For Command, click the dialog button, and locate "ildasm.exe"  
 
-<img src="./Images/Command-Path.png" width=500>
+<img src="./Images/Command-Path.png">
 
 The path may vary depending on your installation. I am running Windows 11 with .NET 4.8 installed, so my path is as follows:  
 
@@ -112,7 +112,7 @@ The "NETFX 4.8 Tools" refers to my version of .NET Framework.
 
 6. For Arguments, use the arrow button to help you fill in values.  
 
-<img src="./Images/Arguments.png" width=500>  
+<img src="./Images/Arguments.png">  
 
 7. In the pop-up, select "Target Name", click the button again, and select "Target Extension".  
 
@@ -120,7 +120,7 @@ This will set up variables to open the current project. For example, if you are 
 
 8. For Initial directory, use the arrow button to choose "Target Directory".  
 
-<img src="./Images/Initial-Directory.png" width=500>  
+<img src="./Images/Initial-Directory.png">  
 
 This will set the working path to the target (output) directory.
 
@@ -136,7 +136,7 @@ The good thing about this is if you change from Debug to Release or update the v
 
 This will open the current project in ILDasm.
 
-<img src="./Images/Hello-World-Tree.png" width=500>
+<img src="./Images/Hello-World-Tree.png">
 
 > Note: "Current Project" is determined by which project is selected in the Solution Explorer. So if you have a class file selected in the Solution Explorer, the external tool will open up that class library.  
 
