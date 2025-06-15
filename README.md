@@ -1,6 +1,6 @@
 # Using ILDasm (Intermediate Language Disassembler) and Visual Studio 2022
 
-ILDasm -- the intermediate language disassember -- tool lets us look at the code compiled by the .NET compiler. This tool is automatically included with Visual Studio and offers both command line and desktop output. This article will show how to configure the desktop version as an External Tool in Visual Studio 2022 and also show how to set the fonts.  
+ILDasm -- the intermediate language disassember -- is a tool that lets us look at the code compiled by the .NET compiler. This tool is automatically included with Visual Studio and offers both command line and desktop output. This article will show how to configure the desktop version as an External Tool in Visual Studio 2022 and also show how to set the fonts.  
 
 ## The Tiniest Bit about IL (Intermediate Language)  
 
